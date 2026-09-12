@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+    <fieldset>
+        <legend>Daftar Akun</legend>
+        <label for="NamaLengkap">Nama Lengkap:</label>
+        <input type="text" id="NamaLengkap" name="Nama Lengkap"><br><br>
+        <hr>
+        <label for="JenisKelamin">Jenis Kelamin:</label>
+        <input type="radio" id="Laki-laki" name="Jenis Kelamin" value="Laki-laki">
+        <label for="Laki-laki">Laki-laki</label>
+        <input type="radio" id="Perempuan" name="Jenis Kelamin" value="Perempuan">
+        <label for="Perempuan">Perempuan</label>
+        <hr>
+        <label for="TempatLahir">Tempat Lahir:</label>
+        <input type="text" id="TempatLahir" name="Tempat Lahir"><br><br>
+        <label for="TanggalLahir">Tanggal Lahir:</label>
+        <time datetime="2000-01-01">
+            <input type="date" id="TanggalLahir" name="Tanggal Lahir">
+        </time>
+        <hr>
+        <label for="Agama">Agama:</label>
+        <select id="Agama" name="Agama">
+            <option value="">--- Pilih Agama ---</option>
+            <option value="Islam">Islam</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+        <hr>
+        <label for="Hobi">Hobi:</label>
+        <input type="checkbox" id="Olahraga" name="Hobi[]" value="Olahraga"> Olahraga
+        <input type="checkbox" id="Membaca" name="Hobi[]" value="Membaca"> Membaca
+        <input type="checkbox" id="Ngoding" name="Hobi[]" value="Ngoding"> Ngoding
+        <hr>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" name="Password">
+        <hr>
+        <input type="checkbox" id="Setuju" name="Setuju" value="Ya">
+        <label for="Setuju"> Dengan ini saya menyetujui syarat dan ketentuan yang berlaku</label>
+        <hr>
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+    </body>
+</html>
