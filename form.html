@@ -23,72 +23,65 @@
         <h1>Formulir Pendaftaran Akun</h1>
     </header>
     <main>
-        <!-- Formulir dibungkus elemen form agar tombol submit dan reset berfungsi secara semantik -->
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Daftar Akun</legend>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Daftar Akun</legend>
 
-                <!-- Nama Lengkap -->
-                <label for="namaLengkap">Nama Lengkap:</label>
-                <input type="text" id="namaLengkap" name="namaLengkap">
-                <br><br>
-                <hr>
+        <label for="namaLengkap">Nama Lengkap:</label>
+        <input type="text" id="namaLengkap" name="namaLengkap"><br><br>
+        <hr>
 
-                <!-- Jenis Kelamin: gunakan span, bukan label for, karena ini label kelompok radio -->
-                <span>Jenis Kelamin:</span>
-                <input type="radio" id="jenisKelaminLaki" name="jenisKelamin" value="Laki-laki">
-                <label for="jenisKelaminLaki">Laki-laki</label>
-                <input type="radio" id="jenisKelaminPerempuan" name="jenisKelamin" value="Perempuan">
-                <label for="jenisKelaminPerempuan">Perempuan</label>
-                <hr>
+        <fieldset>
+            <legend>Jenis Kelamin:</legend>
+            <input type="radio" id="jenisKelaminLaki" name="jenisKelamin" value="Laki-laki">
+            <label for="jenisKelaminLaki">Laki-laki</label>
+            <input type="radio" id="jenisKelaminPerempuan" name="jenisKelamin" value="Perempuan">
+            <label for="jenisKelaminPerempuan">Perempuan</label>
+        </fieldset>
+        <hr>
 
-                <!-- Tempat & Tanggal Lahir -->
-                <label for="tempatLahir">Tempat Lahir:</label>
-                <input type="text" id="tempatLahir" name="tempatLahir">
-                <br><br>
+        <label for="tempatLahir">Tempat Lahir:</label>
+        <input type="text" id="tempatLahir" name="tempatLahir"><br><br>
 
-                <label for="tanggalLahir">Tanggal Lahir:</label>
-                <input type="date" id="tanggalLahir" name="tanggalLahir">
-                <hr>
+        <label for="tanggalLahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggalLahir" name="tanggalLahir">
+        <hr>
 
-                <!-- Agama -->
-                <label for="agama">Agama:</label>
-                <select id="agama" name="agama">
-                    <option value="">--- Pilih Agama ---</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Katolik">Katolik</option>
-                    <option value="Protestan">Protestan</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Buddha">Buddha</option>
-                    <option value="Konghucu">Konghucu</option>
-                </select>
-                <hr>
+        <label for="agama">Agama:</label>
+        <select id="agama" name="agama">
+            <option value="">--- Pilih Agama ---</option>
+            <option value="Islam">Islam</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select>
+        <hr>
 
-                <!-- Hobi -->
-                <span>Hobi:</span>
-                <input type="checkbox" id="hobiOlahraga" name="hobi[]" value="Olahraga">
-                <label for="hobiOlahraga">Olahraga</label>
-                <input type="checkbox" id="hobiMembaca" name="hobi[]" value="Membaca">
-                <label for="hobiMembaca">Membaca</label>
-                <input type="checkbox" id="hobiNgoding" name="hobi[]" value="Ngoding">
-                <label for="hobiNgoding">Ngoding</label>
-                <hr>
+        <fieldset>
+            <legend>Hobi:</legend>
+            <input type="checkbox" id="hobiOlahraga" name="hobi[]" value="Olahraga">
+            <label for="hobiOlahraga">Olahraga</label>
+            <input type="checkbox" id="hobiMembaca" name="hobi[]" value="Membaca">
+            <label for="hobiMembaca">Membaca</label>
+            <input type="checkbox" id="hobiNgoding" name="hobi[]" value="Ngoding">
+            <label for="hobiNgoding">Ngoding</label>
+        </fieldset>
+        <hr>
 
-                <!-- Password -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-                <hr>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <hr>
 
-                <!-- Persetujuan -->
-                <input type="checkbox" id="setuju" name="setuju" value="Ya">
-                <label for="setuju">Dengan ini saya menyetujui syarat dan ketentuan yang berlaku</label>
-                <hr>
+        <input type="checkbox" id="setuju" name="setuju" value="Ya">
+        <label for="setuju"> Dengan ini saya menyetujui syarat dan ketentuan yang berlaku</label>
+        <hr>
 
-                <!-- Tombol Aksi -->
-                <button type="submit">Daftar</button>
-                <button type="reset">Reset</button>
-            </fieldset>
-        </form>
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+    </form>
     </main>
     </body>
 </html>
